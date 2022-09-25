@@ -1,0 +1,59 @@
+.container a {
+    color: #FFF;
+}
+#logo img{
+width: 80px;
+}
+#logo {
+    background-color: rgba(var(--bs-dark-rgb),var(--bs-bg-opacity));
+}
+.nav-item #verde {
+    color: #97c93e;
+}
+#main img{
+max-height: 70vh;
+object-fit: cover;
+filter: grayscale(70%);
+}
+#main {
+    position: relative;
+}
+#main .info {
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #FFF;
+}
+#main a {
+    text-decoration: none; 
+    color: #FFF;
+}
+#main a:hover {
+color: #000;
+}
+.btn btn-success:hover {
+    background-color: #1e5372;
+}
+.navbar-toggler-icon {
+    color: #FFF;
+}
+#oradores img {
+    height: 348px;
+    object-fit: cover;
+}
+#footer {
+    background: linear-gradient(90deg,#1c3643,#273b47 25%,#1e5372); 
+    
+}
+#footer a {
+    text-decoration: none;
+    color: #FFF;
+   
+}
+.text-center {
+    align-items: center;
+}
