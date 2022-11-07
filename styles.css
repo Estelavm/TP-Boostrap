@@ -45,6 +45,29 @@ color: #000;
     height: 348px;
     object-fit: cover;
 }
+#categorías {
+    margin-top: 30px;
+    display: flex; 
+}
+
+#descuento {
+    height: 200px;
+    width: 300px;
+    object-fit: cover;
+    text-align: center;
+    margin: 0;
+}
+#inputTotal {
+    background-color: lightskyblue;
+}
+#inputTotal::placeholder {
+    color: blue;
+}
+div .final-form {
+    background-color: #97c93e;
+    color: #FFF;
+}
+
 #footer {
     background: linear-gradient(90deg,#1c3643,#273b47 25%,#1e5372); 
     

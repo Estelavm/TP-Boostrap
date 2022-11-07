@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Venta de tickets</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+</head>
+<body>
+    <header>
+        <nav id=logo class="navbar navbar-expand-lg bg-dark">
+            <div class="container">
+              <a class="navbar-brand text-light" href="#">Conf Bs As</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon bg-light"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link text-muted" aria-current="page" href="#">La conferencia</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-muted" href="#">Los oradores</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-muted" href="#">El lugar y la fecha</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-light" href="#">Conviértete en orador</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id=verde href="#">Comprar tickets</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+       </header> 
+       <main>
+        <div class="container text-center">
+        <div class="row row-cols-5 offset-lg-2 g-0" id="categorías">
+            <div class="col" id="descuento">
+              <div class="card h-100 border-primary mb-3" style="max-width: 18rem;">
+                <div class="card-body">
+                  <h5 class="card-title">Estudiante</h5>
+                  <p class="card-text">Tienen un descuento</p>
+                  <h5 class="card-title">80%</h5>
+                  <small class="text-muted">* presentar documentación</small>
+              </div>
+            </div>
+            </div>
+            <div class="col" id="descuento">
+              <div class="card h-100 border-info mb-3" style="max-width: 18rem;">                
+                <div class="card-body">
+                    <h5 class="card-title">Trainee</h5>
+                    <p class="card-text">Tienen un descuento</p>
+                    <h5 class="card-title">50%</h5>
+                    <small class="text-muted">* presentar documentación</small>            
+              </div>
+            </div>
+            </div>
+            <div class="col" id="descuento">
+              <div class="card h-100 border-warning mb-3" style="max-width: 18rem;">               
+                <div class="card-body">
+                    <h5 class="card-title">Junior</h5>
+                    <p class="card-text">Tienen un descuento</p>
+                    <h5 class="card-title">15%</h5>
+                    <small class="text-muted">* presentar documentación</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          </div>
+          <div class="container text-center">
+            <h6>VENTA</h6>
+            <h2>VALOR DE TICKET $200</h2>
+          </div>
+          <div class="container">
+            <form>
+            <div class="row">
+              <div class="col-md-6 mb-3">
+                <input type="text" class="form-control" placeholder="Nombre" aria-label="Nombre" required>
+              </div>
+              <div class="col-md-6">
+                <input type="text" class="form-control" placeholder="Apellido" aria-label="Apellido" required>
+              </div>
+              <div class="col12 mb-3">
+                <input type="email" class="form-control" id="inputEmail" placeholder="Correo" required>
+              </div>
+              <div class="col-md-6 mb-3">
+                <label for="inputCant" class="form-label">Cantidad</label>
+                <input type="number" class="form-control" id="inputCant" placeholder="Cantidad" aria-label="Cantidad" required>
+              </div>
+              <div class="col-md-6 mb-3">
+                <label for="inputCat" class="form-label">Categoría</label>
+                <select id="inputCat" class="form-select">
+                  <option>Estudiante</option>
+                  <option>Junior</option>
+                  <option>Trainee</option>
+                </select>
+              </div>
+              <div id="inputTotal" class="col-12 alert alert-primary mt-4" role="alert">
+                  <span>Total a pagar: $</span><span id="Total"></span>
+              </div>
+              <div class="col-md-6 mb-3">
+                <input type="reset" class="form-control final-form" value="Borrar" onclick=''>
+              </div>
+              <div class="col-md-6">
+                <input type="button" class="form-control final-form" id="btn-total" value="Resumen">
+              </div>             
+            </div>
+            </form>
+          </div>
+
+       </main>
+       <footer id="footer" class="pb-4 pt-4">
+        <div class="container">
+            <div class="row text-center">
+        <div class="col-12 col-lg">
+            <a href="#">Preguntas frecuentes</a>
+        </div>
+        <div class="col-12 col-lg">
+            <a href="#">Contáctanos</a>
+        </div>
+        <div class="col-12 col-lg">
+            <a href="#">Prensa</a>
+        </div>
+        <div class="col-12 col-lg">
+            <a href="#">Conferencias</a>
+        </div>
+        <div class="col-12 col-lg">
+            <a href="#">Términos y condiciones</a>
+        </div>
+        <div class="col-12 col-lg">
+            <a href="#">Privacidad</a>
+        </div>
+        <div class="col-12 col-lg">
+            <a href="#">Estudiantes</a>
+        </div>
+            </div>
+        </div>
+        </footer>
+    
+   <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js" integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous"></script> -->
+    <script src="../index.js"></script>
+  </body> 
+
+</html>
